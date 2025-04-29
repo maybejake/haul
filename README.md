@@ -1,5 +1,5 @@
 # Haul
-![A player picks up a chest and a barrel, then puts them back down!](https://github.com/maybejake/haul/blob/main/haul%20demo.gif?raw=true)
+![A player picks up a chest and a barrel, then puts them back down!](https://raw.githubusercontent.com/maybejake/haul/refs/heads/main/haul%20demo%20short.gif)
 ---
 #### Haul is a datapack that lets the player pick up and move chests and barrels! Simply stand next to the chest or barrel, sneak, and right click! The block will disappear and will be placed into your inventory. You can then place it back down wherever you want!
 
