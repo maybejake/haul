@@ -1,13 +1,8 @@
 {
   "id": "haul",
   "pack":{
-    "pack_format":88,
-    "max_format": [94,1],
-    "min_format": 71,
-    "description":"Pick up chests!",
-    "supported_formats": {
-      "max_inclusive": 88,
-      "min_inclusive": 71
-    }
+    "max_format": [107,1],
+    "min_format": 88,
+    "description":"Pick up chests!"
   }
 }

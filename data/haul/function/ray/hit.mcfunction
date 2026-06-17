@@ -1,13 +1,13 @@
-scoreboard players set @s haul.raycast_hit 1
-
 data modify storage haul:chest Items set from block ~ ~ ~ Items
 
 #no items, stop
-execute store result score @s haul.slot_count run data get storage haul:chest Items
-execute if score @s haul.slot_count matches ..0 run return fail
+execute store result score $count haul.dummy run data get storage haul:chest Items
+execute if score $count haul.dummy matches ..0 run return fail
 
 #contains filled chest, stop
 execute if items block ~ ~ ~ container.* *[minecraft:custom_data~{"haul:chest":true}] run return fail
+
+function haul:container_variant
 
 function haul:items/main
 function haul:give with storage haul:give
