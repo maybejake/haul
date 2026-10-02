@@ -20,6 +20,9 @@ function haul:container/format_loop
 # give item to player
 function haul:container/item with storage haul:temp
 
+# if there's no item, fail
+execute if score $item_check haul.dummy matches 0 run return run function haul:ray/fail
+
 playsound minecraft:block.wood.break player @a ~ ~ ~ 1 2
 playsound minecraft:entity.shulker.close player @a ~ ~ ~ 1 0.7
 execute align xyz run particle minecraft:poof ~0.5 ~0.6 ~0.5 0.3 0.3 0.3 0 10 force

@@ -3,6 +3,10 @@ summon minecraft:item_display ~ ~1000 ~ {UUID:[I;-419450404,-252491308,-14145190
 # set as block
 loot replace entity e6ffb1dc-f0f3-49d4-abb0-272349d1e8a9 contents mine ~ ~ ~ minecraft:netherite_pickaxe[minecraft:enchantments={"minecraft:silk_touch":1}]
 
+# check if there's an item
+scoreboard players set $item_check haul.dummy 1
+execute unless data entity e6ffb1dc-f0f3-49d4-abb0-272349d1e8a9 item run return run scoreboard players set $item_check haul.dummy 0
+
 # set as filled container
 $item modify entity e6ffb1dc-f0f3-49d4-abb0-272349d1e8a9 contents {type:"minecraft:sequence",functions:["haul:carried_container",{type:"minecraft:set_components",components:{"minecraft:container":$(container)}}]}
 
