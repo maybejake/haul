@@ -6,3 +6,5 @@
 Simply stand next to the container with an empty mainhand and offhand, sneak, and right click! The block will disappear and will be placed into your inventory. You can then place it back down wherever you want!
 
 Having a filled container in your inventory will give you slowness, they're heavy! Trying to carry more than one will stop you from moving or jumping altogether.
+
+As of v2.0.0, Haul works with any container! Both vanilla and modded!
