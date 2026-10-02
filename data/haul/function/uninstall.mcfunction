@@ -1,9 +1,6 @@
-tellraw @a[gamemode=creative] [{"text":"Haul","color":"dark_green","bold":true}," uninstalled!"]
+tellraw @a[gamemode=creative] [{"text":"Haul","color":"dark_green","bold":true},{"text":" loaded!","color":"white","bold":false}]
 
-scoreboard objectives remove haul.chest_count
 scoreboard objectives remove haul.dummy
 
-data remove storage haul:item slot
-data remove storage haul:item item
-data remove storage haul:chest items
-data remove storage haul:give container
+data remove storage haul:temp container
+data remove storage haul:temp items

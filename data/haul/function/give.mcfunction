@@ -1,1 +1,0 @@
-$give @s $(block)[minecraft:max_stack_size=1,minecraft:container=$(container),minecraft:custom_data={"haul:chest":true,"smithed":{"ignore":{"functionality":true,"crafting":true}}},minecraft:item_name=["",{"text":"Filled ","italic":false},{"translate":"minecraft:chest","fallback":"Chest","italic":false}]]

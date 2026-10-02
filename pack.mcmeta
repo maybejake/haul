@@ -1,8 +1,8 @@
 {
   "id": "haul",
   "pack":{
-    "max_format": [107,1],
-    "min_format": 88,
-    "description":"Pick up chests!"
+    "max_format": [121,0],
+    "min_format": [121,0],
+    "description":"Pick up containers!"
   }
 }

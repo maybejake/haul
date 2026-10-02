@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_name": {"translate":"item.haul.carried_container", "fallback":"Carried Container"}
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {"haul":{"carried_container":true}}
+    }
+  ]
+}

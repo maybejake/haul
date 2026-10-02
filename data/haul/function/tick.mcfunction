@@ -1,1 +1,1 @@
-execute as @a run function haul:player/check
+execute as @a[gamemode=!creative] run function haul:player/check

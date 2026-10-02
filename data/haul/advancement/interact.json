@@ -4,28 +4,32 @@
       "trigger": "minecraft:any_block_use",
       "conditions": {
         "player": {
-          "flags": {
-            "is_sneaking": true
-          },
-          "slots": {
-            "weapon.mainhand": {
-              "count": 0
+          "type": "minecraft:entity_properties",
+          "entity": "this", 
+          "predicate": {
+            "flags": {
+              "is_sneaking": true
             },
-            "weapon.offhand": {
-              "count": 0
-            }
-          }
-        },
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "#haul:containers"
+            "slots": {
+              "weapon.mainhand": {
+                "count": 0
+              },
+              "weapon.offhand": {
+                "count": 0
               }
             }
           }
-        ]
+        },
+        "location": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "predicates": {
+                "minecraft:container": {}
+              }
+            }
+          }
+        }
       }
     }
   },

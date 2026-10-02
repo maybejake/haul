@@ -1,1 +1,0 @@
-$data modify storage haul:give container append value {slot:$(slot),item:$(item)}
